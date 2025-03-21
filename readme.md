@@ -12,7 +12,7 @@ This repository serves as a personal knowledge base and practical guide to build
 - **Data Access & Persistence**: Repository, DAO, Active Record, Unit of Work, Data Mapper
 - **Concurrency**: Thread Pool, Future/Promise, Actor Model, Reactor
 - **Functional Patterns**: Currying, Middleware, Monad, etc.
-- **Modern Patterns**: Dependency Injection (DI)
+- **Miscellaneous**: Dependency Injection (DI)
 
 ### 2. Software Architecture
 - **Deployment & Scalability**: Monolith, Microservices, Serverless
@@ -21,10 +21,6 @@ This repository serves as a personal knowledge base and practical guide to build
 - **Domain Logic**: DDD, ECS, Specification Pattern
 - **Reliability**: Caching, Load Balancing, CAP Theorem
 - **Security & Observability**: OAuth2, JWT, Logging, Monitoring
-
-## 🧪 Hands-On Projects
-- Plug-and-play feature using Strategy Pattern in a Next.js app
-- Design and build a scalable social media system using microservices, Redis caching, and an API Gateway
 
 ## 🚀 Getting Started
 Each topic includes:
