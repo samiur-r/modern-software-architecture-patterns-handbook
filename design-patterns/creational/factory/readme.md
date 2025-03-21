@@ -54,8 +54,6 @@ The barista (factory) takes your order (input) and returns a ready-to-use produc
 
 - A class-based implementation of the Factory pattern (OOP style).
 - A functional programming variant using closures and object maps.
-- A test/demo file showing how to create and use different object types.
-- Documentation to help understand the pattern and its usage.
 
 ---
 
