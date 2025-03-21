@@ -14,11 +14,11 @@ These patterns help manage object creation **when**:
 
 | Pattern                                             | Purpose                                                                       |
 | --------------------------------------------------- | ----------------------------------------------------------------------------- |
-| 🔁 [Prototype](./prototype/README.md)               | Clone existing objects instead of creating from scratch.                      |
-| 🏭 [Factory Method](./factory-method/README.md)     | Let subclasses decide which object to instantiate.                            |
-| 🧰 [Abstract Factory](./abstract-factory/README.md) | Create families of related objects without specifying their concrete classes. |
-| 🧱 [Builder](./builder/README.md)                   | Step-by-step object construction for complex objects.                         |
-| 🧩 [Singleton](./singleton/README.md)               | Ensure a class has only one instance and provide global access.               |
+| 🔁 [Prototype](./prototype/readme.md)               | Clone existing objects instead of creating from scratch.                      |
+| 🏭 [Factory Method](./factory/readme.md)     | Let subclasses decide which object to instantiate.                            |
+| 🧰 [Abstract Factory](./abstract-factory/readme.md) | Create families of related objects without specifying their concrete classes. |
+| 🧱 [Builder](./builder/readme.md)                   | Step-by-step object construction for complex objects.                         |
+| 🧩 [Singleton](./singleton/readme.md)               | Ensure a class has only one instance and provide global access.               |
 
 ---
 
