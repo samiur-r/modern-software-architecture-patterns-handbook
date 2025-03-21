@@ -50,13 +50,6 @@ The barista (factory) takes your order (input) and returns a ready-to-use produc
 
 ---
 
-## 📂 This Folder Contains
-
-- A class-based implementation of the Factory pattern (OOP style).
-- A functional programming variant using closures and object maps.
-
----
-
 ## 🔗 Related Patterns
 
 - **Abstract Factory** – A factory of factories, used for families of related objects.

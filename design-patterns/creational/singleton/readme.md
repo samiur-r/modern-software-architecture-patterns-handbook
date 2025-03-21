@@ -47,14 +47,6 @@ Think of a **printer spooler** in an operating system. You don’t want multiple
 
 ---
 
-## 📂 This Folder Contains
-
-- Implementation of the Singleton pattern using a class (Object-Oriented).
-- Functional programming variant using closures.
-- Simple demo/test files to validate Singleton behavior.
-
----
-
 ## 🔗 Related Patterns
 
 - **Factory Pattern** – Often used alongside Singleton for controlled instantiation.
