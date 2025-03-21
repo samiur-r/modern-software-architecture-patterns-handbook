@@ -51,5 +51,3 @@ Think of a **printer spooler** in an operating system. You don’t want multiple
 
 - **Factory Pattern** – Often used alongside Singleton for controlled instantiation.
 - **Dependency Injection (DI)** – Preferred for managing shared dependencies in large systems.
-
----
