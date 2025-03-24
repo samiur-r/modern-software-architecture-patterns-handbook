@@ -1,27 +1,20 @@
-class User {
-  constructor(public id: string, public name: string, public email: string) {}
-}
+import { UserDAO } from "import-path";
 
-interface UserRepository {
-  findById(id: string): Promise<User | null>;
-  save(user: User): Promise<void>;
-}
+export class UserRepository {
+  constructor(private userDAO: UserDAO) {}
 
-class InMemoryUserRepository implements UserRepository {
-  private users: Map<string, User> = new Map();
+  async getUserProfile(id: number) {
+    const user = await this.userDAO.getUserById(id);
+    if (!user) throw new Error("User not found");
 
-  async findById(id: string): Promise<User | null> {
-    return this.users.get(id) || null;
+    return {
+      id: user.id,
+      displayName: user.name,
+      contact: user.email,
+    };
   }
 
-  async save(user: User): Promise<void> {
-    this.users.set(user.id, user);
+  async registerUser(name: string, email: string) {
+    return this.userDAO.createUser({ name, email });
   }
 }
-
-// usage.ts
-const repo = new InMemoryUserRepository();
-const user = new User("1", "Alice", "alice@example.com");
-await repo.save(user);
-const found = await repo.findById("1");
-console.log(found); // User instance
