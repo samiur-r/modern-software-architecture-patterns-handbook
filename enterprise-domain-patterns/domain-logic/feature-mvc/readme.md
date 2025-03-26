@@ -55,6 +55,7 @@ In Feature-Based MVC, **each feature is like a department** — it owns everythi
 
 ## 🗂️ Recommended Project Structure
 
+![feature-mvc](https://github.com/user-attachments/assets/529abcc4-3bf9-49f0-9a65-f82863625b44)
 
 ---
 
