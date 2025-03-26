@@ -53,12 +53,6 @@ DDD models these **domain concepts** as code and makes sure the logic lives wher
 
 ## 🗂️ Recommended Project Structure (Node.js + Prisma)
 
-app/
-├── api/                # HTTP handlers (interface layer)
-src/
-├── domain/             # Core domain models and interfaces (Entities, Repos)
-├── application/        # Use cases / business logic orchestration
-├── infrastructure/     # DB implementations (e.g. Prisma)
 
 
 ---

@@ -55,35 +55,6 @@ In Feature-Based MVC, **each feature is like a department** — it owns everythi
 
 ## 🗂️ Recommended Project Structure
 
-src/
-├── features/                         # 💡 Feature/domain-based modules
-│   └── user/                        # 👤 User-related logic
-│       ├── user.route.ts           # HTTP routes
-│       ├── user.controller.ts      # Handles req/res
-│       ├── user.service.ts         # Business logic
-│       ├── user.repo.ts            # Data access (e.g. Prisma)
-│       ├── user.schema.ts          # Zod validation + DTOs
-│       ├── user.types.ts           # Domain types
-│       └── index.ts                # Barrel exports for module
-│
-├── infrastructure/                 
-│   └── prisma/
-│       ├── client.ts               # Prisma client singleton
-│       └── helpers.ts              # (Optional) mappers or utilities
-│
-├── shared/                         # ♻️ Cross-cutting concerns
-│   ├── middlewares/
-│   │   └── errorHandler.ts         # Global error handler
-│   ├── errors/
-│   │   └── AppError.ts             # Custom error class
-│   └── utils/
-│       └── response.ts             # Success/failure response formatters
-│
-├── config/                         # 🌍 App/environment configuration
-│   └── env.ts                      # Validated environment variables
-│
-└── main.ts                         # 🚀 App entry point (Express setup)
-
 
 ---
 
