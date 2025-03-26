@@ -53,7 +53,7 @@ DDD models these **domain concepts** as code and makes sure the logic lives wher
 
 ## 🗂️ Recommended Project Structure (Node.js + Prisma)
 
-
+![ddd](https://github.com/user-attachments/assets/2f3f94a9-9ad4-4bf0-802c-500a9e86798f)
 
 ---
 
