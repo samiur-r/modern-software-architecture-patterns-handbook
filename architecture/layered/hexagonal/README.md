@@ -46,6 +46,12 @@ Likewise, in Hexagonal Architecture:
 
 ---
 
+## 📁 Project Structure
+
+![Screenshot from 2025-03-29 00-46-59](https://github.com/user-attachments/assets/e9915974-ad8e-4732-9778-850319b89fb2)
+
+---
+
 ## 🔗 Related Architectural Patterns
 
 - **Clean Architecture** – Same principle, slightly different layering
