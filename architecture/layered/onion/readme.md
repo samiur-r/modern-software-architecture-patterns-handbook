@@ -50,7 +50,7 @@ Each use case is:
 
 ## 📁 Project Structure
 
-
+![Screenshot from 2025-03-29 00-38-40](https://github.com/user-attachments/assets/4db913a6-4969-45a1-aca4-95125fe15018)
 
 ---
 
