@@ -1,4 +1,4 @@
-# 🧠 Entity-Component-System (ECS) Architecture with TypeScript
+# 🧠 Entity-Component-System (ECS) Architecture
 
 **Entity-Component-System (ECS)** is a data-oriented architectural pattern that emphasizes **composition over inheritance**. It separates data (components) from behavior (systems) and is widely used in **game engines**, **simulations**, and **real-time systems** for its **modularity, flexibility, and performance**.
 

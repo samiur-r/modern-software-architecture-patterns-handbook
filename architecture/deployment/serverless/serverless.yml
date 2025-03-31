@@ -1,0 +1,26 @@
+service: serverless-ts-app
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: us-east-1
+
+functions:
+  register:
+    handler: handler.register
+    events:
+      - http:
+          path: register
+          method: post
+          cors: true
+
+plugins:
+  - serverless-esbuild
+
+custom:
+  esbuild:
+    bundle: true
+    target: node18
+    format: esm
+    platform: node
+    sourcemap: true
