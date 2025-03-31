@@ -44,24 +44,6 @@ Used to manage **consistency and atomicity** across multiple operations that sho
 
 ---
 
-### 🔹 Domain Logic Patterns
-
-These patterns structure how **business rules** and **domain models** are implemented and maintained in your application.
-
-#### `ddd/` (Domain-Driven Design)
-
-- Focuses on building software around a rich domain model.
-- Encourages **ubiquitous language**, **bounded contexts**, and **aggregates**.
-- Used in complex systems with deep domain logic.
-
-#### `ecs/` (Entity–Component–System)
-
-- Often used in game development and simulations.
-- Composes behavior using components instead of deep inheritance.
-- Promotes performance, decoupling, and scalability.
-
----
-
 ## ✅ Benefits of Enterprise Patterns
 
 - **Decoupling** – Business logic and data logic are separated
@@ -85,8 +67,6 @@ These patterns structure how **business rules** and **domain models** are implem
 
 - Use `Repository` with `Unit of Work` for clean separation and consistency
 - Avoid mixing data access with domain logic (`Active Record` tradeoff)
-- In performance-critical systems, consider `ECS` over OOP models
-- Apply `DDD` only where domain complexity justifies it
 
 ---
 

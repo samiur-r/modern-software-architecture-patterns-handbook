@@ -1,136 +1,119 @@
-# 🧩 Software Patterns
+# 🎯 Design Patterns Overview
 
-This directory contains a categorized collection of **design patterns**, **client architecture patterns**, **enterprise patterns**, and **cross-cutting concerns**. These patterns serve as reusable solutions to common problems in software design, ranging from low-level code structures to higher-level architectural decisions.
+This document summarizes key software **design patterns** across common categories, helping developers identify, understand, and apply reusable solutions to common software challenges.
 
-Each subfolder includes:
-
-- A conceptual explanation (`README.md`)
-- code examples
+Patterns are grouped by purpose: how they construct objects, organize structure, encapsulate behavior, handle concurrency, or apply in enterprise and functional contexts.
 
 ---
 
-## 📦 Categories
+## 🛠️ Creational Patterns
 
-### 🔨 Creational Patterns
+These patterns deal with **object creation mechanisms**, trying to create objects in a manner suitable to the situation.
 
-Creational patterns deal with **object creation logic**, making the system independent of how objects are instantiated.
-
-- `singleton/`
-- `factory/`
-- `abstract-factory/`
-- `builder/`
-- `prototype/`
-
----
-
-### 🧱 Structural Patterns
-
-Structural patterns focus on **composing classes or objects** into larger structures while keeping them flexible and efficient.
-
-- `adapter/`
-- `decorator/`
-- `facade/`
-- `proxy/`
-- `composite/`
+| Pattern              | Description                                                              |
+| -------------------- | ------------------------------------------------------------------------ |
+| **Singleton**        | Ensures a class has only one instance with a global access point         |
+| **Factory Method**   | Creates objects without specifying the exact class                       |
+| **Abstract Factory** | Produces families of related objects without specifying concrete classes |
+| **Builder**          | Constructs complex objects step-by-step                                  |
+| **Prototype**        | Creates new objects by cloning existing ones                             |
 
 ---
 
-### 🔁 Behavioral Patterns
+## 🧱 Structural Patterns
 
-Behavioral patterns are concerned with **how objects interact and communicate**, defining clear responsibilities among components.
+These patterns are concerned with **object composition** — how objects and classes are structured to form larger systems.
 
-- `observer/`
-- `strategy/`
-- `state/`
-- `command/`
-- `chain-of-responsibility/`
-- `iterator/`
-
----
-
-### ⚙️ Concurrency Patterns
-
-Concurrency patterns help design programs that **handle multiple tasks at once**, either through threading or async flows.
-
-- `thread-pool/`
-- `actor-model/`
-- `futures-promises/`
-- `reactor/`
+| Pattern       | Description                                                       |
+| ------------- | ----------------------------------------------------------------- |
+| **Adapter**   | Converts one interface into another expected by the client        |
+| **Decorator** | Adds responsibilities to an object dynamically                    |
+| **Facade**    | Provides a simplified interface to a complex subsystem            |
+| **Proxy**     | Acts as a placeholder for another object to control access        |
+| **Composite** | Composes objects into tree structures for hierarchical operations |
 
 ---
 
-### 🧠 Functional Patterns
+## 🔁 Behavioral Patterns
 
-Functional patterns promote **declarative, stateless, and immutable** design, ideal for modern JavaScript/TypeScript and reactive systems.
+These define how objects **communicate and behave**, helping manage algorithms, responsibilities, and the flow of control.
 
-- `currying/`
-- `immutability/`
-- `higher-order-functions/`
-- `memoization/`
-- `middleware/`
-
----
-
-### 🏢 Enterprise Patterns
-
-These patterns are widely used in **enterprise applications** and domain-driven systems. They help organize **data access**, **transactions**, and **domain logic**.
-
-#### Data Access
-
-- `repository/`
-- `dao/`
-- `active-record/`
-- `data-mapper/`
-
-#### Transactions
-
-- `unit-of-work/`
-
-#### Domain Logic
-
-- `ddd/`
-- `ecs/`
+| Pattern                     | Description                                                             |
+| --------------------------- | ----------------------------------------------------------------------- |
+| **Observer**                | Allows objects to subscribe and react to changes in another object      |
+| **Strategy**                | Encapsulates interchangeable algorithms behind a common interface       |
+| **State**                   | Allows an object to change its behavior when its internal state changes |
+| **Command**                 | Encapsulates a request as an object                                     |
+| **Chain of Responsibility** | Passes a request along a chain of handlers                              |
+| **Iterator**                | Provides a way to access elements of a collection sequentially          |
 
 ---
 
-### 🎨 Client Architecture Patterns
+## ⚙️ Concurrency Patterns
 
-These patterns define **UI and presentation layer architectures**, often used in mobile and frontend apps.
+These patterns help manage **asynchronous or parallel processing**, often in multi-threaded environments.
 
-- `mvc/`
-- `mvp/`
-- `mvvm/`
-- `mvvm-c/`
-- `viper/`
-- `micro-frontend/`
-
----
-
-### 📌 Cross-Cutting Concerns
-
-Cross-cutting patterns are relevant across all layers of an application, helping manage common concerns like dependency wiring and modularity.
-
-- `dependency-injection/`
+| Pattern              | Description                                                              |
+| -------------------- | ------------------------------------------------------------------------ |
+| **Thread Pool**      | Reuses a fixed set of threads for executing tasks                        |
+| **Actor Model**      | Models concurrency through message-passing actors (used in Akka, Erlang) |
+| **Futures/Promises** | Represents a value that will be available in the future                  |
+| **Reactor**          | Demultiplexes and dispatches events (used in async I/O frameworks)       |
 
 ---
 
-## 🚀 Contribution Guide
+## 🧬 Functional Patterns
 
-If you're adding a new pattern:
+Common in **functional programming**, these patterns focus on **data immutability**, **pure functions**, and **composability**.
 
-1. Create a new subfolder under the appropriate category.
-2. Include a `README.md` with:
-   - Description
-   - Real-world analogy
-   - Use cases
-   - Pros & cons
-   - Best practices
-3. Code examples (`.ts` or `.js`)
+| Pattern                    | Description                                                                              |
+| -------------------------- | ---------------------------------------------------------------------------------------- |
+| **Currying**               | Transforms a function with multiple arguments into a series of single-argument functions |
+| **Immutability**           | State cannot be changed after it is created                                              |
+| **Higher-Order Functions** | Functions that take other functions as arguments or return them                          |
+| **Memoization**            | Caches the result of expensive function calls                                            |
+| **Middleware**             | Functions layered in a pipeline to process inputs or requests (common in Express, Redux) |
 
 ---
 
-## ✨ Summary
+## 🏢 Enterprise Patterns
 
-This collection is intended to serve as a **reference library for learning, sharing, and implementing patterns** across different layers of modern software development — from individual functions to distributed systems.
+These are used in enterprise software to structure **data access**, **domain logic**, and **transaction management**.
 
-> “Patterns are tools, not rules. Choose the right one for the problem at hand.”
+### 📂 Data Access Patterns
+
+| Pattern                      | Description                                              |
+| ---------------------------- | -------------------------------------------------------- |
+| **Repository**               | Mediates between the domain and data mapping layers      |
+| **DAO (Data Access Object)** | Abstracts and encapsulates all access to the data source |
+| **Active Record**            | Domain objects also handle their own persistence         |
+| **Data Mapper**              | Separates domain logic from persistence logic entirely   |
+
+### 🔄 Transaction Management
+
+| Pattern          | Description                                                                                            |
+| ---------------- | ------------------------------------------------------------------------------------------------------ |
+| **Unit of Work** | Tracks changes to objects during a transaction and coordinates the writing of changes as a single unit |
+
+---
+
+## 🔧 Cross-Cutting Concerns
+
+These patterns address **infrastructure-level problems** that affect multiple layers of the system.
+
+| Pattern                  | Description                                                                                          |
+| ------------------------ | ---------------------------------------------------------------------------------------------------- |
+| **Dependency Injection** | A technique to inject dependencies instead of hardcoding them — promotes testability and flexibility |
+
+---
+
+## 🧠 Summary
+
+Each design pattern serves a unique purpose in solving architectural and code-level problems. Learning them improves:
+
+- Code maintainability
+- System scalability
+- Reusability and flexibility
+- Separation of concerns
+
+> Use design patterns as **tools, not rules**. Apply them where they fit your use case, and always optimize for clarity, not cleverness.
